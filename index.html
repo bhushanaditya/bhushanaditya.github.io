@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Bhushan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <div class="grid-container">
+        <header class="header">
+            <div id="game-container" class="hidden">
+                <div id="game-score">Score: <span id="score">0</span></div>
+                <div id="game-message"></div>
+            </div>
+            <div id="profile-info" class="profile-section">
+                <img id="avatar" class="profile-avatar" alt="Profile Avatar">
+                <h1 id="name" class="profile-name"></h1>
+                <p id="bio" class="profile-bio"></p>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <section class="stats-grid">
+                <div class="stat-card" id="repos">
+                    <h3>Repositories</h3>
+                    <span class="stat-number"></span>
+                </div>
+                <div class="stat-card" id="followers">
+                    <h3>Followers</h3>
+                    <span class="stat-number"></span>
+                </div>
+                <div class="stat-card" id="following">
+                    <h3>Following</h3>
+                    <span class="stat-number"></span>
+                </div>
+            </section>
+        </main>
 
+        <footer class="footer">
+            <div id="social-links" class="social-section"></div>
+        </footer>
+    </div>
+    <div id="easter-egg-overlay" class="hidden">
+        <p>You found a secret! Press 'K' to start the game</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
